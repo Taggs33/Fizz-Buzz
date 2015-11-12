@@ -1,0 +1,12 @@
+.intro {
+	height: 150px;
+	background-color: dimgray;
+}
+
+.intro h1 {
+	padding-top: 3rem;
+	font-weight: 500;
+	color: red;
+	text-shadow: 3px 3px black;
+	text-align: center;
+}
