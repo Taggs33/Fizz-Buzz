@@ -10,3 +10,11 @@
 	text-shadow: 3px 3px black;
 	text-align: center;
 }
+
+.fizz-red {
+	color: red;
+}
+
+.buzz-blue {
+	color: blue;
+}
