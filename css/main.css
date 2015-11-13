@@ -11,10 +11,24 @@
 	text-align: center;
 }
 
+.content {
+	text-align: center;
+	background-color: darkgray;
+	width: 500px;
+	margin-left: 35%;
+}
+
 .fizz-red {
 	color: red;
+	font-size: 2rem;
 }
 
 .buzz-blue {
 	color: blue;
+	font-size: 2rem;
+}
+
+.double-fizz {
+	color: green;
+	font-size: 2rem;
 }

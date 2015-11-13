@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   for (i = 1; i <= 100; i++) {
 	if (i % 3 == 0 && i % 5 == 0) {
-	  $('.fizzbuzz').append("FizzBuzz<br>");	
+	  $('.fizzbuzz').append("<span class='double-fizz'>FizzBuzz</span><br>");	
 	  console.log("FizzBuzz");
 	}
 	else if (i % 3 == 0) {
