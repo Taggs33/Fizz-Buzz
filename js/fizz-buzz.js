@@ -10,28 +10,36 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 function startFizzBuzz(input2) {
   // for (i = 1; i <= input2; i++) {
+
+  var node = document.getElementById('fizzbuzz');
+
   var i = 1;  
   while (i <= input2) {  
     if (i % 3 == 0 && i % 5 == 0) {
       // $('.fizzbuzz').append("<span class='double-fizz'>FizzBuzz</span><br>");
-      var node = document.createElement("span");
-      var brNode = document.createElement("br");
-      var textNode = document.createTextNode("FizzBuzz");
-      node.appendChild(textNode);
-      document.getElementById("fizzbuzz").appendChild(node);
-      document.getElementById("fizzbuzz").appendChild(brNode);
-      console.log("FizzBuzz");
+      // var node = document.createElement("span");
+      // var brNode = document.createElement("br");
+      // var textNode = document.createTextNode("FizzBuzz");
+      // node.appendChild(textNode);
+      // document.getElementById("fizzbuzz").appendChild(node);
+      // document.getElementById("fizzbuzz").appendChild(brNode);
+      // console.log("FizzBuzz");
+
+      node.innerHTML = node.innerHTML + '<span class="double-fizz">FizzBuzz</span><br>';
     }
     else if (i % 3 == 0) {
-      $('.fizzbuzz').append("<span class='fizz-red'>Fizz</span><br>");  
+      // $('.fizzbuzz').append("<span class='fizz-red'>Fizz</span><br>");  
+      node.innerHTML = node.innerHTML + '<span class="fizz-red">Fizz</span><br>';
       console.log("Fizz");
     }
     else if (i % 5 == 0) {
-      $('.fizzbuzz').append("<span class='buzz-blue'>Buzz</span><br>"); 
+      // $('.fizzbuzz').append("<span class='buzz-blue'>Buzz</span><br>"); 
+      node.innerHTML = node.innerHTML + '<span class="buzz-blue">Buzz</span><br>';
       console.log("Buzz");
     }
     else {
-      $('.fizzbuzz').append(i + "<br>");  
+      // $('.fizzbuzz').append(i + "<br>");  
+      node.innerHTML = node.innerHTML + i + '<br>';
       console.log(i);
     }
     i++;
